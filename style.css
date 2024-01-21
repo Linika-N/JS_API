@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sofia", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(27, 5, 47);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+    border: 5px solid rgb(10, 9, 1);
+    border-radius: 15px;
+    max-width:900px;
+    min-height: 600px;
+    padding: 20px;
+    background-color: rgb(218, 93, 15);
+    margin: 0 auto;
+    margin-top: 100px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.image_box {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+    border: 5px solid rgb(10, 9, 1);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+}
+
+.image_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.photographer_box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.photographer_box, .likes_box {
+    border-radius: 15px;
+    border: 5px solid rgb(10, 9, 1);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    min-width: 220px;
+    min-height: 110px;
+    padding: 10px;
+}
+
+.photographer_name, .photographer {
+    text-align: center;
+}
+
+.likes_box {
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+    align-items: center;
+    padding: 20px;
+}
+
+.likes_button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.likes_svg:hover {
+    fill: brown;
+    transition: 0.6s ease;
+}
+
+.likes_svg:active path {
+    fill: rgb(224, 198, 54);
+    transition: 0.4s ease;
+}
